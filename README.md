@@ -8,15 +8,12 @@ Example scene:
 
 ```text
 Main
-├── Data
-│   └── data = React.useState(100)
-├── Label
-│   └── Displays data
-└── Button
-    └── Modifies data
+├── Data   [data.gd]
+├── Label  [label.gd]
+└── Button [button.gd]
 ```
 
-`Data.gd`
+`data.gd`
 
 ```gdscript
 extends Node
@@ -24,7 +21,7 @@ extends Node
 var data = React.useState(100)
 ```
 
-`Label.gd`
+`label.gd`
 
 ```gdscript
 extends Label
@@ -35,7 +32,7 @@ func _ready() -> void:
 	React.useEffect(func(): text = str(data.value), [data])
 ```
 
-`Button.gd`
+`button.gd`
 
 ```gdscript
 extends Button
