@@ -9,7 +9,7 @@ I'm a React user and I like the simplicity and familiarity of its reactive API. 
 - Reduce the boilerplate required by Godot's native signals.
 - Provide a React-like experience for React users, so they can get started immediately.
 
-The API follows the familiar `useState` and `useEffect` patterns. One small difference is that `signal.value` is used when reading a state inside an effect, while the signal itself is used as the dependency.
+The API follows the familiar `useState` and `useEffect` patterns. One small difference is that `state.value` is used when reading a state inside an effect, while the state itself is used as the dependency.
 
 ## API
 
